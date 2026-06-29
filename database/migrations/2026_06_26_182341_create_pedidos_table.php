@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('pedidos', function (Blueprint $table) {
             $table->id();
+            $table->enum('estado', ['PENDIENTE', 'PROCESO', 'ENTREGADO', 'ANULADO'])
+                ->default('PENDIENTE');
+            $table->date('fecha');
+            $table->foreignId('cliente_id')
+                ->constrained()
+                ->cascadeOnUpdate()
+                ->restrictOnDelete();
             $table->timestamps();
         });
     }

@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('multimedia', function (Blueprint $table) {
             $table->id();
+            $table->string('imagen_principal')->nullable();
+            $table->string('render_ambiente')->nullable();
+            $table->string('macro_textura')->nullable();
+            $table->foreignId('producto_id')
+                ->constrained()
+                ->cascadeOnUpdate()
+                ->cascadeOnDelete();
             $table->timestamps();
         });
     }

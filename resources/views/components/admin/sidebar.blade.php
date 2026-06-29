@@ -23,32 +23,26 @@
         </li>
 
         <li>
-            <a href="#">
-                🏷 Marcas
-            </a>
-        </li>
-
-        <li>
-            <a href="#">
+            <a href="{{ route('productos') }}">
                 📦 Productos
             </a>
         </li>
 
         <li>
-            <a href="#">
-                🖼 Banner
+            <a href="{{ route('atributos') }}">
+                📏 Atributos
             </a>
         </li>
 
         <li>
-            <a href="#">
-                ℹ Nosotros
+            <a href="{{ route('clientes') }}">
+                👥 Clientes
             </a>
         </li>
 
         <li>
-            <a href="#">
-                📞 Contacto
+            <a href="{{ route('pedidos') }}">
+                🛒 Pedidos
             </a>
         </li>
 

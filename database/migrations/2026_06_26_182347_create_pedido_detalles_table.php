@@ -13,6 +13,16 @@ return new class extends Migration
     {
         Schema::create('pedido_detalles', function (Blueprint $table) {
             $table->id();
+            $table->integer('cantidad')->default(1);
+            $table->decimal('precio_unitario', 10, 2)->default(0);
+            $table->foreignId('pedido_id')
+                ->constrained()
+                ->cascadeOnUpdate()
+                ->cascadeOnDelete();
+            $table->foreignId('producto_id')
+                ->constrained()
+                ->cascadeOnUpdate()
+                ->restrictOnDelete();
             $table->timestamps();
         });
     }

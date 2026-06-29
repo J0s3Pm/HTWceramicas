@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('valor_productos', function (Blueprint $table) {
             $table->id();
+            $table->string('valor', 150);
+            $table->foreignId('atributo_id')
+                ->constrained()
+                ->cascadeOnUpdate()
+                ->cascadeOnDelete();
+            $table->foreignId('producto_id')
+                ->constrained()
+                ->cascadeOnUpdate()
+                ->cascadeOnDelete();
             $table->timestamps();
         });
     }
