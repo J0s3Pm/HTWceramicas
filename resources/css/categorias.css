@@ -1,0 +1,279 @@
+/* ===============================
+   CONTENEDOR
+==================================*/
+
+.page-title{
+    font-size:28px;
+    font-weight:700;
+    color:#0A2A66;
+}
+
+.page-subtitle{
+    color:#6c757d;
+}
+
+/* ===============================
+   CARDS
+==================================*/
+
+.stats-card{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.stats-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.stats-card .card-body{
+
+    padding:25px;
+
+}
+
+.stats-number{
+
+    font-size:35px;
+
+    font-weight:bold;
+
+}
+
+.stats-icon{
+
+    font-size:45px;
+
+    opacity:.25;
+
+}
+
+/*=============================
+BOTON
+==============================*/
+
+.btn-primary-hw{
+
+    background:#0A2A66;
+
+    color:white;
+
+    border:none;
+
+}
+
+.btn-primary-hw:hover{
+
+    background:#08214f;
+
+}
+
+.btn-danger-hw{
+
+    background:#C81D25;
+
+    color:white;
+
+    border:none;
+
+}
+
+.btn-danger-hw:hover{
+
+    background:#b01720;
+
+}
+
+/*=============================
+TABLA
+==============================*/
+
+.table{
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+.table thead{
+
+    background:#0A2A66;
+
+    color:white;
+
+}
+
+.table thead th{
+
+    border:none;
+
+    padding:18px;
+
+}
+
+.table tbody td{
+
+    vertical-align:middle;
+
+    padding:18px;
+
+}
+
+.table tbody tr{
+
+    transition:.25s;
+
+}
+
+.table tbody tr:hover{
+
+    background:#f7f8fa;
+
+}
+
+/*=============================
+BUSCADOR
+==============================*/
+
+.search-box{
+
+    position:relative;
+
+}
+
+.search-box input{
+
+    padding-left:45px;
+
+    border-radius:12px;
+
+}
+
+.search-box i{
+
+    position:absolute;
+
+    top:13px;
+
+    left:16px;
+
+    color:#6c757d;
+
+}
+
+/*=============================
+BADGES
+==============================*/
+
+.badge-activo{
+
+    background:#198754;
+
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+}
+
+.badge-inactivo{
+
+    background:#dc3545;
+
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+}
+
+/*=============================
+BOTONES ACCIONES
+==============================*/
+
+.btn-action{
+
+    width:38px;
+
+    height:38px;
+
+    border-radius:10px;
+
+    margin-right:5px;
+
+}
+
+.btn-edit{
+
+    background:#ffc107;
+
+}
+
+.btn-delete{
+
+    background:#dc3545;
+
+    color:white;
+
+}
+
+/*=============================
+MODAL
+==============================*/
+
+.modal-title{
+
+    color:#0A2A66;
+
+    font-weight:bold;
+
+}
+
+/*=============================
+PAGINACION
+==============================*/
+
+.pagination{
+
+    justify-content:center;
+
+}
+
+/*=============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:768px){
+
+.stats-card{
+
+margin-bottom:20px;
+
+}
+
+.page-title{
+
+font-size:22px;
+
+}
+
+.table{
+
+font-size:14px;
+
+}
+
+}

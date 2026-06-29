@@ -1,0 +1,146 @@
+/* Bootstrap */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Variables */
+@import './utilities/variables.css';
+
+/* Layout */
+@import './layouts/navbar.css';
+@import './layouts/footer.css';
+
+/* Página principal */
+@import './pages/home.css';
+
+/* Componentes */
+@import './components/hero.css';
+@import './components/about.css';
+@import './components/categorias.css';
+@import './components/productos.css';
+@import './components/nosotros.css';
+@import './components/contacto.css';
+
+/* Dashboard */
+@import './dashboard/sidebar.css';
+@import './dashboard/dashboard.css';
+
+/* Utilidades */
+@import './utilities/buttons.css';
+@import './utilities/animations.css';
+
+/*admin*/
+@import './admin.css';
+
+
+
+
+/* ================= LOGIN ================= */
+
+.login-page{
+    background:#eef2f7;
+}
+
+.login-banner{
+    position:relative;
+    background:url('/images/login-bg.jpg') center center;
+    background-size:cover;
+    min-height:100vh;
+    color:#fff;
+}
+
+.login-banner .overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(10,42,102,.78);
+}
+
+.banner-content{
+    position:relative;
+    z-index:2;
+    max-width:500px;
+    margin:auto;
+    text-align:center;
+    padding:40px;
+}
+
+.login-logo{
+    width:140px;
+    margin-bottom:25px;
+}
+
+.banner-content h1{
+    font-size:3rem;
+    font-weight:700;
+}
+
+.banner-content h4{
+    color:#C81D25;
+    margin:20px 0;
+}
+
+.banner-content p{
+    font-size:18px;
+    opacity:.9;
+}
+
+.login-card{
+
+    width:100%;
+    max-width:450px;
+    background:white;
+
+    padding:50px;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+}
+
+.login-card h2{
+    color:#0A2A66;
+    font-weight:bold;
+}
+
+.form-control{
+
+    border-radius:10px;
+
+    height:48px;
+}
+
+.btn-login{
+
+    background:#C81D25;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:12px;
+}
+
+.btn-login:hover{
+
+    background:#0A2A66;
+
+    color:white;
+}
+
+.back-site{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    text-decoration:none;
+
+    color:#0A2A66;
+
+    font-weight:600;
+}
+
+.back-site:hover{
+
+    color:#C81D25;
+}
